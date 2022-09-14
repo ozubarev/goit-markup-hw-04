@@ -125,6 +125,11 @@ svg {
   color: var(--accent-color);
 }
 
+.kontacts-list .link:hover svg,
+.kontacts-list .link:focus svg{
+  fill: var(--accent-color);
+}
+
 .header-item,
 .kontakts-item:not(:last-child) {
   margin-right: 50px;
@@ -138,11 +143,6 @@ svg {
 .icon-tel {
   margin-right: 10px;
   fill: var(--primary-text-color)
-}
-
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: var(--accent-color)
 }
 
 .icon-tel:hover,
@@ -343,17 +343,17 @@ svg {
   border-radius: 50%;
 }
 
+.social-link:hover svg,
+.social-link:focus svg{
+  fill: var(--white-color);
+}
+
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .social-icon {
   fill: var(--main-icon-color)
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--white-color);
 }
 
 /* Clients */
@@ -376,9 +376,18 @@ svg {
   padding: 16px 32px;
 }
 
+.client-icon {
+  fill: var(--main-icon-color);
+}
+
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
+}
+
+.clients-link:hover svg,
+.clients-link:focus svg {
+  fill: var(--accent-color);
 }
 
 /* Footer */
