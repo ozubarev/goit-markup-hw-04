@@ -8,7 +8,7 @@
   --background-color-main: #f5f5f5;
   --background-color-team: #f5f4fa;
   --footer-address-color: rgba(255, 255, 255, 0.6);
-  --main-icon-color: #AFB1B8;
+  --main-icon-color: #afb1b8;
 }
 
 body {
@@ -126,7 +126,7 @@ svg {
 }
 
 .kontacts-list .link:hover svg,
-.kontacts-list .link:focus svg{
+.kontacts-list .link:focus svg {
   fill: var(--accent-color);
 }
 
@@ -142,20 +142,24 @@ svg {
 .icon-mail,
 .icon-tel {
   margin-right: 10px;
-  fill: var(--primary-text-color)
+  fill: var(--primary-text-color);
 }
 
 .icon-tel:hover,
 .icon-tel:focus {
-  fill: var(--accent-color)
+  fill: var(--accent-color);
 }
 
 /* Hero */
 
 .hero {
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpeg);
-  background-color: #C4C4C4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-bg.jpeg);
+  background-color: #c4c4c4;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -344,7 +348,7 @@ svg {
 }
 
 .social-link:hover svg,
-.social-link:focus svg{
+.social-link:focus svg {
   fill: var(--white-color);
 }
 
@@ -353,7 +357,7 @@ svg {
 }
 
 .social-icon {
-  fill: var(--main-icon-color)
+  fill: var(--main-icon-color);
 }
 
 /* Clients */
@@ -371,7 +375,7 @@ svg {
   display: inline-block;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -382,7 +386,7 @@ svg {
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-link:hover svg,
@@ -391,6 +395,11 @@ svg {
 }
 
 /* Footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 
 .footer {
   background-color: var(--background-color-footer);
@@ -438,6 +447,40 @@ svg {
 .footer-item .link:hover,
 .footer-item .link:focus {
   color: var(--accent-color);
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-soc-link {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-soc-icon {
+  fill: var(--white-color);
 }
 
 /* Portfolio */
@@ -531,9 +574,15 @@ svg {
   letter-spacing: 0.03em;
 }
 
+.portfolio-link:hover .link-box,
+.portfolio-link:focus .link-box {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .img-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
-
